@@ -1,0 +1,1 @@
+Docker container for WiWi Stuko Software
