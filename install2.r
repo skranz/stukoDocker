@@ -48,15 +48,18 @@ from.github = function(pkg, lib = path, ref="master", overwrite = glob.overwrite
 
 }
 
-#from.cran(lib=path,"DT")
-#from.cran(lib=path,"readr")
-from.cran(lib=path,"officer")
-from.cran(lib=path,"flextable")
-from.cran(lib=path, "stringdist")
+
+from.github(lib=path,"skranz/webforms",ref = "master")
 from.github(lib=path,"skranz/shinyEventsLogin",ref = "master")
+from.github(lib=path,"skranz/stuko",ref = "master")
 
 cat("\n\nFailed installations:\n")
 print(failed)
 
 cat("\n\nSuccessfully installed:\n")
 print(success) 
+
+ 
+
+
+
